@@ -1,0 +1,185 @@
+@tailwind base;
+@tailwind components;
+
+.container{
+    max-width: 1360px;
+}
+
+.slogan{
+    bottom: 30px;
+    top: 80px;
+    left: 240px;
+}
+.nav{
+    height: 60px;
+    border-radius: 4px;
+}
+
+.name1{
+    padding-left: 25px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #fff;
+    margin-bottom: 2px;
+}
+
+.welcome{
+    letter-spacing: 2px;
+    font-size:10px;
+}
+.mission{
+    font-size:24px;
+}
+.ptext{
+    font-size:16px;
+}
+
+.buttonmore{
+        border-radius: 4px;
+        border: 1px solid white;
+        font-size: 14px;
+        font-weight: bold;
+}
+.inner-con{
+    max-width:1360px;
+}
+.count{
+    font-size:48px;
+    line-height:50px;
+}
+
+.listt::before {
+    position: absolute;
+    content: '>';
+    line-height: 14px;
+    color: #002868;
+    left: 0;
+    
+}
+
+.title{
+    letter-spacing:2px;
+}
+
+
+.project-title{
+    width:300px;
+    font-size:24px;
+    line-height:30px;
+}
+.project-text{
+    width:300px;
+    height:70px;
+    font-size:16px;
+    line-height:25px;
+}
+.minus{
+    padding-top:2px;
+}
+.more{
+    border-radius:4px;
+    border:1px;
+    width:200px;
+    height:50px;
+}
+
+.divider1{
+    height:1px;
+    width:740px;
+}
+
+.bicons{
+    border-radius:60%;
+}
+.copyright{
+    color: rgba(225, 225, 225, 0.7);
+}
+
+.top{
+    border-radius:50%
+}
+.dropdown-content{
+    z-index:1;
+    box-shadow: 0 20px 40px 0 rgb(0 0 0 / 35%);
+    min-width:275px;
+
+}
+.dropdown:hover .dropdown-content {
+    visibility: visible;
+    transition-delay: 0.1s;
+}
+
+.dropdown:not(:hover) .dropdown-content {
+    transition-delay: 0.5s;
+}
+
+
+@tailwind utilities;
+
+
+.bar{
+    transition: background-color .5s ease-in, transform .5s ease-in, width .5s ease-in;
+}
+    input[type="checkbox"]:checked ~ label .bar {
+        background-color:#002868;
+     }
+    input[type="checkbox"]:checked ~ label .top
+    {
+      transform: translateY(0px) rotateZ(45deg);
+    }
+    
+    input[type="checkbox"]:checked ~ label .middle
+    {
+      width: 0;
+    }
+   
+    input[type="checkbox"]:checked ~ label .bottom
+    {
+      transform: translateY(-15px) rotateZ(-45deg);
+    
+    }
+
+    input[type="checkbox"]:checked ~ .content {
+        transform: translateX(-300px);
+        overflow: hidden; 
+    }
+
+    input[type="checkbox"]:checked ~ label
+    {
+      right: 240px;
+    }
+
+    ul li:hover .sideways-content{  
+        right: -20px;
+        
+    }
+
+
+    @layer base {
+        @font-face{
+            font-family: ProximaNova;
+            src: url(./fonts/Mark\ Simonson\ -\ Proxima\ Nova\ Regular.otf);
+            font-weight: normal;
+        }
+        @font-face{
+            font-family: ProximaNova;
+            src: url(./fonts/Mark\ Simonson\ -\ Proxima\ Nova\ Bold.otf);
+            font-weight: bold;
+        }
+        @font-face{
+            font-family: SourceSansPro;
+            src: url(./fonts/SourceSansPro-Regular.ttf);
+            font-weight: normal;
+        }
+        @font-face{
+            font-family: SourceSansPro;
+            src: url(./fonts/SourceSansPro-Bold.ttf);
+            font-weight: bold;
+        }
+    }  
+
+   /* body{
+        font-family: 'SourceSansPro',serif;
+
+    }*/
